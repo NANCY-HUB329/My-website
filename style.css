@@ -1,0 +1,57 @@
+.logo-image{
+    width: 55px;
+    height: 60px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+body::before{
+    display:block;
+    content:'';
+    height:60px;
+}
+
+@media 
+    (min-width: 768px) {
+        .news-input{
+            width:50%;
+        }
+    }
+    .flex-container{
+        display: flex;
+    }  
+    .card{
+        min-height:100vh ;
+        align-self: normal;
+    }
+
+
+    .card:hover{
+        border: 8px solid blue;
+        background-color: green;
+        opacity: none;
+     }
+  .card-img{
+      overflow: hidden;
+  }
+  .card-img img{
+      transition: all 1.3s ease;
+  }
+  .card-img:hover img{
+      transform:scale(1.2);
+  }
+  .accordion-toggle:after {
+    color: #aaa;
+    content: "\f146";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 10px;
+    line-height: 36px;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    }
+    
+.accordion-toggle.collapsed:after {
+    content: "\f0fe";
+}
